@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+   </head>
+  <body>
+    <nav> 
+      <a href="index.html">Weather</a>        
+        <h1>Weather<span id="location"></span></h1>
+      <a href="7day.html">7 day</a>
+    </nav>
+    <aticle>
+    <table id="weatherTable" border="1">
+      <tr>
+          <td><p id="day"></p></td>
+          <td><span id="icon"></span><br><span id="condition"></span></td>
+      </tr>
+      <tr>
+          <td><p>Температура повітря С</p></td>
+          <td id="temperature"></td>
+      </tr>
+      <tr>
+          <td><p>Атмосферний тиск мм</p></td>
+          <td id="pressure"></td>
+      </tr> 
+      <tr>
+          <td><p>Вітер м/c</p></td>
+          <td id="wind"></td>
+      </tr>     
+      <tr>
+          <td><p>Вологість повітря %</p></td>
+          <td id="humidity"></td>
+      </tr>
+     </table>
+    </article>
+    <p id="error"></p>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/index.js"></script>  
+   </body>
+</html>   
+    
+    
+
